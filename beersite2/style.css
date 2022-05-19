@@ -1,0 +1,255 @@
+/********defualts*************/
+nav, header, footer{ display: block;}
+body{
+   line-height: 1;
+   margin: 0; 
+}
+label{
+    font-size: 35px;
+    font-weight: 600;
+}
+p{
+    font-size: 20px;
+    line-height: 1.2;
+}
+article p{
+    font-size: 25px;
+    padding: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/********nav bar*************/
+nav{
+    width:100%;
+    margin: 0;
+}
+nav ul{
+    background-color: lightblue ;
+    overflow: hidden;
+    margin: 0;
+    
+}
+
+ul.topnav li{
+    list-style: none;
+    float: left;
+}
+ul.topnav li.topnav-right{
+    float: right;
+}
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color:black;
+    text-align: center;
+    padding: 14px;
+}
+ul.topnav li a:hover {
+    background-color: blue;
+    color: white;
+}
+ul.topnav li.dropdownIcon{
+    display: none;
+
+}
+/********custome*stles************/
+
+#section-1-gradient{
+    background :grey;
+    background:-webkit-linear-gradient( grey, rgb(68, 66, 66));    
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+align-items: center;
+
+}
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+div.box{
+    background-color: white;
+    margin: 24px;
+    border-radius: 7px;
+    padding: 36px 24px 40px 24px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.5),
+    0 2px 3px 0 rgba(0,0,0,.1);
+    text-align: center;
+}
+.learnMore{
+    font-size: 20px;
+    border-radius: 7px;
+    padding: 10px 50px;
+    color: white;
+    background-color: grey;
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-weight: 300;
+}
+div.botImage img{
+    display: block;
+    margin:auto;
+    margin-bottom: 15px;
+     box-shadow: -5px -5px 3px 2px rgba(0,0,0,.5), 2px 2px 3px 5px rgba(0,0,0,.5);    
+}
+
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width:50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{box-sizing: border-box;}
+
+div.leftside-col{
+    margin-left: 5%;
+    margin-bottom: 5px;
+}
+div.rightside-col{
+    margin-left: 15%;
+  margin-right: 5%;  
+ }
+ iframe{
+     border-radius: 15px;
+ }
+
+div.icon{
+
+    width: 100%;
+}
+h1.large{
+    color:white;
+    font-size: 46px;
+    margin: 0;
+    line-height: 70px;
+}
+h1.section2Header{
+    font-size: 55px;
+    text-align: center;
+}
+form h2{
+color: white;
+}
+input[type="text"]{
+    width: 200px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+}
+footer.footsy{
+    background-color: lightblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 10%;
+}
+footer.footsy h1{
+    padding: 10px;
+    color:rgb(15, 15, 15);
+    font-size: 30px;
+    
+}
+footer.footsy ul {
+    list-style: none;
+    text-align: left ;
+    padding-left: 0;
+  
+}
+footer.footsy ul li{
+    color:black;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-left: 5%;
+}
+
+
+/********mobile*************/
+@media screen and (max-width:680px){
+    h1{text-align: center;}
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+
+    }
+    ul.topnav li.dropdownIcon{
+        display: block;
+        float: right;
+    }
+
+
+ul.topnav.responsive li.dropdownIcon{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+ul.topnav.responsive{
+    position: relative;
+
+}
+ul.topnav.responsive li{
+    display: inline;
+    float: none;
+}
+ul.topnav.responsive li a{
+display: block;
+text-align: left;
+}
+.col-6, .col-4, .col-7, .col-5{
+    width: 100%;
+    margin: 0;
+}
+div.mobileStack{
+    width: 25%;
+    display: block;
+}
+div.mobileStack h1{
+    font-size: 20px;
+    
+}
+div.mobileStack ul li{
+    font-size: 15px;
+    padding-left: 15%;
+}
+
+
+div.box{
+    padding: 5px;
+    display: block;
+}
+div.rightside-col,
+div.lefttside-col{
+margin:15px;
+}
+input[type="text"]{
+ width: 300px;
+
+}
+.container {
+width: 100%;
+margin: auto;
+padding-top:4%;
+padding-bottom: 4%;
+}
+.videocontainer iframe{
+position: relative;
+width: 100%;
+margin: 0;
+overflow: hidden;
+}
+article p{
+    font-size:20px;
+}
+
+
+}
